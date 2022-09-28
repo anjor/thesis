@@ -1,0 +1,54 @@
+%\renewcommand{\thechapter}{8}
+
+\chapter{Summary and discussion}
+
+In this thesis, we have presented fundamental results pertaining to passive scalar
+turbulence in kinetic systems---we analytically derived the fluctuation-dissipation
+relations for a kinetic scalar (\chapref{chap:phmixlin}), and we showed numerical results
+which shed light on how linear phase mixing for a kinetic passive scalar is modified due
+to nonlinear advection (chapters \ref{chap:pp0} and \ref{chap:phmixnl}). In particular, in
+\chapref{chap:phmixnl}, we identified the turbulent analog of the plasma echo, and
+demonstrated,
+with the aid of a simple model, that phase mixing may be siginificantly suppressed due to the
+echo in collisionless systems. We developed a new code, \Gand\ (\chapref{chap:gandalf}) to simulate the kinetic
+reduced MHD equations \cite{tome}, which describe the Alfv\'{e}nic and compressive
+components of the turbulent cascade in the solar wind at scales larger than the ion Larmor
+radius. In \chapref{chap:slowmodes}, we addressed two key questions regarding the
+compressive cascade in the inertial range using numerical simulations ---
+\begin{inparaenum}
+\item Do the compressive fluctuations have a parallel cascade?
+\item Why are the density and field strength fluctuations undamped at kinetic scales?
+\end{inparaenum}
+We found that the compressive perturbations do indeed have a parallel cascade, and have
+the same perpendicular and parallel power law spectra as the Alfv\'{e}nic 
+fluctuations. We showed, by diagnosing the
+flux in Hermite space, that despite the parallel cascade compressive fluctuations remain
+undamped due to the stochastic plasma echo. 
+
+Even in the absence of a parallel cascade for the slow modes, the power law spectra can be
+explained using the results from \chapref{chap:pp0}. In this limit, the slow modes cascade
+to small perpendicular spatial scales before they can phase mix, resulting in a fluid-like
+turbulent cascade, hence, exhibit power law spectra. 
+
+We would like to investigate the cascade of compressive fluctuations further, in
+particular, to understand how the parallel cascade comes about.
+After developing solid understanding of this problem, we hope to study how the compressive cascade, in
+particular the plasma echo, is dependent on parameters like the plasma beta, the ion
+charge, and the ion to
+electron temperature ratio. Another direction forward would be to add more physics to
+\Gand. This can be done in two possible ways. Firstly, by implementing non-Maxwellian
+distribution functions---this would enable 
+further numerical investigations into solar wind turbulence near the marginal stability
+boundaries for firehose and mirror instabilities. Secondly, making \Gand\ fully gyrokinetic
+by including finite Larmor radius effects. The work in this thesis was restricted to
+scales larger than the ion Larmor radius, where linear phase mixing is the only 
+phase mixing process available to the system.
+With a gyrokinetic code, the ideas developed here could be generalized to include finite
+Larmor radius effects, specifically, to investigate the role nonlinear phase mixing
+\cite{tatsuno09} plays in the turbulent cascade at sub-Larmor scales.
+
+The analytical and numerical framework developed as a part of this thesis fits in a larger
+program to understand the properties of turbulence in weakly collisional magnetized
+plasmas like the solar wind, in particular, to study the dissipation mechanisms favored by
+the system, and to learn how the dissipated energy is partitioned between different
+species of the plasma.
