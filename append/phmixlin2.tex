@@ -1,0 +1,48 @@
+%\renewcommand{\thechapter}{C}
+
+\chapter{Evaluation of integrals using Kramers-Kronig relations}
+\label{app:KKrel}
+
+If $h(\zeta) = h_1(\zeta) + i h_2(\zeta)$ is a complex function that is analytic in the
+upper half plane, where $h_1(\zeta)$ and $h_2(\zeta)$ are real, and if $h(\zeta)$ decays
+as $1/|\zeta|$ or faster at large $\zeta$, then,
+\begin{align}
+& h_1(\zeta') = \frac{1}{\pi} P \int_{-\infty}^{+\infty} \frac{\rmd\zeta}{\zeta-\zeta'}
+h_2(\zeta), \\
+& h_2(\zeta') = -\frac{1}{\pi} P \int_{-\infty}^{+\infty} \frac{\rmd\zeta}{\zeta-\zeta'}
+h_1(\zeta), 
+\end{align}
+
+where $P$ indicates that the the integrals on the right hand side are Cauchy principal
+value integrals.
+
+Now consider the function $\lt[1/D_\alpha(\zeta) - \alpha\rt]$ at $|\zeta| \gg 1$,
+\beq
+\frac{1}{D_\alpha(\zeta)} - \alpha \approx \frac{1}{1 + \frac{1}{\alpha} - 1 -
+\frac{2}{\zeta^2}} - \alpha \approx \frac{2 \alpha}{\zeta^2}, 
+\eeq
+where we used the asymptotic form of $Z(\zeta)$ at $|\zeta| \gg 1$. Since the zeros of
+$D_\alpha(\zeta)$ lie in the bottom half plane, and $\lt[1/D_\alpha(\zeta) - \alpha\rt]$
+vanishes like $1/\zeta^2$ at large $\zeta$, we can use the Kramers-Kronig relations:
+\begin{align}
+\frac{1}{\pi} P \int_{-\infty}^{+\infty} \frac{\rmd \zeta}{\zeta - \zeta'}
+\text{Im}\lt[\frac{1}{D_\alpha(\zeta)}\rt] &= \text{Re}\lt[\frac{1}{D_\alpha(\zeta')} -
+\alpha\rt]. \\
+\end{align}
+Evaluating this expression at $\zeta' = 0$, 
+\beq
+\frac{1}{\pi} \int_{-\infty}^{+\infty} \frac{\rmd\zeta}{\zeta} \frac{\sqrt{\pi} \zeta
+e^{-\zeta^2}}{|D_\alpha(\zeta)|^2} = \frac{1}{\sqrt{\pi}} \int_{-\infty}^{+\infty}
+\rmd\zeta \frac{e^{-\zeta^2}}{|D_\alpha(\zeta)|^2} = \frac{\alpha^2}{1+\alpha}.
+\eeq
+
+Similarly, by considering functions $\lt[\zeta^2/D_\alpha(\zeta) - \zeta^2 - \alpha/2\rt]$ and
+$\lt[\zeta^4/D_\alpha(\zeta) - \zeta^4 -\zeta^2 \alpha/2 - 3 \alpha/4\rt]$, we get
+\beq
+\frac{1}{\sqrt{\pi}}\int_{-\infty}^{+\infty} \rmd\zeta \frac{\zeta^2
+e^{-\zeta^2}}{|D_\alpha(\zeta)|^2} = \frac{\alpha^2}{2}, 
+\eeq
+\beq
+\frac{1}{\sqrt{\pi}}\int_{-\infty}^{+\infty} \rmd\zeta \frac{\zeta^4
+e^{-\zeta^2}}{|D_\alpha(\zeta)|^2} = \frac{3 \alpha^2}{4}.
+\eeq
