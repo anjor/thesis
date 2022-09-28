@@ -1,0 +1,120 @@
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+% Derivatives
+\newcommand{\pd}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}}
+\newcommand{\ipd}[2]{\ensuremath{\left({\partial #1}/{\partial #2}}\right)}
+\newcommand{\od}[2]{\ensuremath{\frac{d #1}{d #2}}}
+\newcommand{\odbig}[2]{\ensuremath{\frac{d}{d #2} \left( #1 \right)}}
+\newcommand{\pds}[2]{\ensuremath{\frac{\partial^2 #1}{\partial #2^2}}}
+\newcommand{\pdm}[3]{\ensuremath{\frac{\partial^2 #1}{\partial #2 \partial #3}}}
+\newcommand{\pmu}{\ensuremath{\partial_\mu}}
+\newcommand{\pnu}{\ensuremath{\partial_\nu}}
+\newcommand{\pumu}{\ensuremath{\partial^\mu}}
+\newcommand{\punu}{\ensuremath{\partial^\nu}}
+\newcommand{\px}{\ensuremath{\partial_x}}
+\newcommand{\py}{\ensuremath{\partial_y}}
+\newcommand{\lapl}{\ensuremath{\nabla^2}}
+
+%Delimiters
+\newcommand{\Blangle}{\ensuremath{\Big{\langle}}}
+\newcommand{\Brangle}{\ensuremath{\Big{\rangle}}}
+	
+\newcommand{\mb}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\Tr}[1]{\ensuremath{\text{Tr}}\left[#1\right]}
+
+% General text
+\newcommand{\st}{\ensuremath{^\text{st}}}
+\newcommand{\nd}{\ensuremath{^\text{nd}}}
+\newcommand{\rd}{\ensuremath{^\text{rd}}}
+\newcommand{\Zfun}{\ensuremath{Z(\omega/|k|)}}
+\newcommand{\Dalph}{\ensuremath{D_\alpha(\omega/|k|)}}
+\newcommand{\ZfunL}{\ensuremath{Z(\omega_L/|k|)}}
+\newcommand{\DalphL}{\ensuremath{D_\alpha(\omega_L/|k|)}}
+\newcommand{\DprimalphL}{\ensuremath{D_\alpha'(\omega_L/|k|)}}
+\newcommand{\domk}{\ensuremath{d \left(\frac{\omega}{|k|} \right)}}
+
+%Alex's macros
+\newcommand\beq{\begin{equation}}
+\newcommand\eeq{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\newcommand{\figsref}[3]{Figs.~\ref{#1}, \ref{#2} and ~\ref{#3}}
+\newcommand{\Figref}[1]{Fig.~\ref{#1}}
+\newcommand{\Figsand}[2]{Figs.~\ref{#1} and \ref{#2}}
+\newcommand{\figsand}[2]{Figs.~\ref{#1} and \ref{#2}}
+\newcommand{\figsdash}[2]{figs.~(\ref{#1}--\ref{#2})}
+\newcommand{\figsreffour}[4]{figs.~\ref{#1}, \ref{#2}, \ref{#3} and \ref{#4}}
+\newcommand{\Chapref}[1]{Chapter~\ref{#1}}
+\newcommand{\chapref}[1]{Chapter~\ref{#1}}
+\newcommand{\secref}[1]{Sec.~\ref{#1}}
+\newcommand{\secsand}[2]{Secs.~\ref{#1} and \ref{#2}}
+\newcommand{\secsdash}[2]{Secs.~\ref{#1}--\ref{#2}}
+\newcommand{\secsref}[1]{Secs.~\ref{#1}}
+\newcommand{\apref}[1]{appendix~\ref{#1}}
+\newcommand{\Apref}[1]{Appendix~\ref{#1}}
+\newcommand{\Eqref}[1]{Eq.~(\ref{#1})}
+\renewcommand{\eqref}[1]{Eq.~(\ref{#1})}
+\newcommand{\eqsref}[1]{Eqs.~(\ref{#1})}
+\newcommand{\Eqsand}[2]{Eqs.~(\ref{#1}) and (\ref{#2})}
+\newcommand{\eqsand}[2]{Eqs.~(\ref{#1}) and (\ref{#2})}
+\newcommand{\Eqsdash}[2]{Eqs.~(\ref{#1}--\ref{#2})}
+\newcommand{\eqsdash}[2]{Eqs.~(\ref{#1}--\ref{#2})}
+\newcommand{\exref}[1]{(\ref{#1})}
+\newcommand{\tabref}[1]{table~\ref{#1}}
+\newcommand{\Tabref}[1]{Table~\ref{#1}}
+
+\newcommand{\lt}{\left}
+\newcommand{\rt}{\right}
+\newcommand{\bl}{\bigl}
+\newcommand{\br}{\bigr}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\dd}{\partial}
+\newcommand{\const}{{\rm const}}
+\renewcommand{\Re}{{\rm Re}}
+\newcommand{\sgn}{{\rm sgn}\,}
+\newcommand{\eps}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+\newcommand{\rmd}{{\rm d}}
+\newcommand{\vth}{v_{\rm th}}
+\newcommand{\geff}{\gamma_{\rm eff}}
+\newcommand{\gko}{g_{k\omega}}
+\newcommand{\gmko}{g_{m,k\omega}}
+\newcommand{\gmk}{g_{m,k}}
+\newcommand{\tg}{\tilde g}
+\newcommand{\tgmk}{\tilde g_{m,k}}
+\newcommand{\tgmko}{\tilde g_{m,k\omega}}
+\newcommand{\Cmk}{C_{m,k}}
+\newcommand{\phiko}{\phi_{k\omega}}
+\newcommand{\chiko}{\chi_{k\omega}}
+
+\newcommand{\ppar}{p_\parallel}
+\newcommand{\vpar}{v_\parallel}
+\newcommand{\kpar}{k_\parallel}
+\newcommand{\Mkpq}{M_{\mb{kpq}}}
+\newcommand{\Phip}{\Phi_\mb{p}}
+\newcommand{\EcrossB}{\mb{E} \times \mb{B}}
+\newcommand{\tgm}{\tilde g_m}
+\newcommand{\tgmq}{\tilde g_{m,\mb{q}}}
+\newcommand{\pdt}{\ensuremath{\partial_t}}
+\newcommand{\qpar}{q_\parallel}
+\newcommand{\Fsk}{F_{s,\mb{k}}}
+\newcommand{\Gsk}{\Gamma_{s,\mb{k}}}
+\newcommand{\pu}{\lt|p_\perp \mb{u_\perp}\rt|}
+
+%Anjor's macros
+\newcommand{\Gand}{{\em Gandalf}}
+\newcommand{\Apar}{A_\parallel}
+\newcommand{\Bpar}{B_\parallel}
+\newcommand{\dBpar}{\delta B_\parallel}
+\newcommand{\dBpark}{\delta B_{\parallel, \mb{k}}}
+\newcommand{\alf}{Alfv\'{e}n } 
+\newcommand{\Gmk}{\Gamma_{m,\mb{k}}}
+\newcommand\Real{\mbox{Re}} % cf plain TeX's \Re and Reynolds number
+\newcommand\Imag{\mbox{Im}} % cf plain TeX's \Im
+\newcommand{\chikoone}{\chi_{1,k\omega}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\etal}{\textit{et al.}}
