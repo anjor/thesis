@@ -1,0 +1,14 @@
+%\appendix
+%\renewcommand{\thechapter}{A}
+
+\chapter{White noise forcing in \Gand}
+\label{gandalf:app:forcing}
+
+In this appendix, we illustrate how a white-noise source term is implemented in \Gand.
+Consider a field $\theta$ driven by a delta-correlated source $\chi$,
+\bea
+    \pd{\theta}{t} + \ldots = \chi,\\
+    \langle\chi(t)\chi(t')\rangle = \epsilon \delta(t-t'),
+\eea
+where $\epsilon$ is the power at which $\chi$ injects energy into $\theta$.
+
